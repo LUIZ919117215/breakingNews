@@ -1,3 +1,6 @@
+//código não entendido
+//tentando
+//código entendido//
 import mongoose from 'mongoose';
 
 const connectDatabase = () => {

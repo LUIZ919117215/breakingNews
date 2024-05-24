@@ -1,3 +1,6 @@
+//código não entendido
+//tentando
+//código entendido//
 import { Router } from "express"
 import userController from "../controllers/user.controller.js"
 import { validId, validUser }  from "../middlewares/global.middlewares.js"

@@ -1,3 +1,6 @@
+//código não entendido
+//tentando
+//código entendido//
 import { Router } from 'express';
 const router = Router();
 

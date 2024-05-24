@@ -1,5 +1,8 @@
+//código não entendido
+//tentando
+//código entendido//
 import dotenv from 'dotenv';
-import userService from '../services/user.service.js'
+import userService from '../services/user.service.js';
 import jwt from 'jsonwebtoken';
 
 dotenv.config()

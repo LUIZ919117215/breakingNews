@@ -1,3 +1,6 @@
+//código não entendido
+//tentando
+//código entendido//
 import bcrypt from 'bcrypt'
 import { loginService, generateToken } from '../services/auth.service.js'
 

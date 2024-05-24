@@ -1,7 +1,9 @@
+//código não entendido
+//tentando
+//código entendido//
 import express from 'express'
 import connectDatabase from './src/database/db.js'
 import dotenv from "dotenv"
-
 
 
 import  userRoute from './src/routes/user.route.js'
