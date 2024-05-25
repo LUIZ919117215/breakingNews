@@ -29,7 +29,7 @@ const NewsSchema = new mongoose.Schema({
         type: Array,
         required: true,
     },
-    commets: {
+    comments: {
         type: Array,
         required: true,
     },
