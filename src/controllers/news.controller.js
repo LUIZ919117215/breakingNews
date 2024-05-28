@@ -1,7 +1,8 @@
 //código não entendido//
 //tentando
 //código entendido
-import { createService, findAllService, countNews, topNewsService,findByIdService, searchByTitleService, byUserService } from "../services/news.service.js"
+//crie um middleware de validação para o title, text, banner quando tever tempo
+import { createService, findAllService, countNews, topNewsService,findByIdService, searchByTitleService, byUserService, updateService } from "../services/news.service.js"
 
 export const create = async (req, res) => {
     try {
@@ -70,7 +71,8 @@ export const findAll = async (req, res) => {
                 username: item.user.username,
                 userAvatar: item.user.avatar,
             }))
-        })        
+        }       ) 
+        
     } catch (err) {
         req.status(500).send({ message: err.message })
     }
@@ -172,5 +174,29 @@ export const byUser = async (req, res) => {
         })
     } catch (err) {
         res.status(400).send({ message: err.message })
+    }
+}
+
+export const update = async (req, res) => {
+    try {
+        const { title, text, banner } = req.body
+        const { id } = req.params
+
+        if (!title ||!text ||!banner) {
+            return res.status(400).send({ message: "Submit all fields for registration" })
+        }
+
+        const news = await findByIdService(id)
+
+        if (String(news.user._id) !== req.userId) {
+            res.status(400).send({ message: "You didn't update this post" })
+        }
+
+        await updateService(id, title, text, banner)
+
+        return res.send({ message: "Post successfully updated!" })
+
+    } catch (err) {
+        res.status(500).send({ message: err.message })
     }
 }
