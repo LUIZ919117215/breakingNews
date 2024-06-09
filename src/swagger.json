@@ -10,7 +10,7 @@
     },
     "servers": [
       {
-        "url": "https://breakingnews-kp7i.onrender.com/",
+        "url": "https://breakingnews-kp7i.onrender.com",
         "description": "Render"
       },
   
@@ -38,10 +38,10 @@
                 "examples": {
                   "Users": {
                     "value": {
-                      "name": "Cacau Lima",
-                      "username": "cacode",
-                      "email": "clima@gmail.com",
-                      "password": "12345",
+                      "name": "branden lee",
+                      "username": "atomic-code",
+                      "email": "4387655434@gmail.com",
+                      "password": "4387655434",
                       "avatar": "https://i.imgur.com/Ry1cb5M.png",
                       "background": "https://images.wallpapersden.com/image/download/triangle-8k-blue-pattern_bGZlbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg"
                     }
@@ -265,7 +265,7 @@
           }
         }
       },
-      "/news": {
+      "/news/": {
         "get": {
           "summary": "Search all news",
           "description": "Route responsible for fetching all news",
