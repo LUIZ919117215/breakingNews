@@ -24,11 +24,11 @@
       }
     ],
     "paths": {
-      "/user/": {
+      "/user": {
         "post": {
           "summary": "Create a new user",
           "description": "Route responsible for creating a new user",
-          "tags": ["Users"],
+          "tags": ["User"],
           "requestBody": {
             "content": {
               "application/json": {
@@ -68,7 +68,7 @@
           }
         }
       },
-      "/user": {
+      "/user/": {
         "get": {
           "summary": "Search all users",
           "description": "Route responsible for fetching all users",

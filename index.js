@@ -13,7 +13,7 @@ import  swaggerRoute from './src/routes/swagger.route.cjs'
 
 dotenv.config()
 
-const port = process.env.PORT_URL || 3000
+const port = process.env.PORT_URL
 const app = express()
 
 connectDatabase()
