@@ -7,7 +7,7 @@ const router = Router()
 import { create, findAll, topNews, findById, searchByTitle, byUser, update, erase, likeNews, addComment, deleteComment } from "../controllers/news.controller.js"
 import { authmiddleware } from '../middlewares/auth.middlewaers.js'
 
-router.post("/", authmiddleware, create)
+router.post("/", authmiddleware, create)//testando
 router.get("/", findAll)
 router.get("/top", topNews)
 router.get("/search", searchByTitle)
