@@ -28,7 +28,7 @@
         "post": {
           "summary": "Create a new user",
           "description": "Route responsible for creating a new user",
-          "tags": ["User"],
+          "tags": ["Users"],
           "requestBody": {
             "content": {
               "application/json": {
@@ -38,10 +38,10 @@
                 "examples": {
                   "Users": {
                     "value": {
-                      "name": "branden lee",
-                      "username": "atomic-code",
-                      "email": "4387655434@gmail.com",
-                      "password": "4387655434",
+                      "name": "monkey d. luffy",
+                      "username": "reiDosPiratas",
+                      "email": "4387@gmail.com",
+                      "password": "4387",
                       "avatar": "https://i.imgur.com/Ry1cb5M.png",
                       "background": "https://images.wallpapersden.com/image/download/triangle-8k-blue-pattern_bGZlbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg"
                     }
