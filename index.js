@@ -1,6 +1,8 @@
 //código não entendido
 //tentando
 //código entendido//
+//so no thunder clint = testando
+//no thunder clint e no swagger = testado!!
 import express from 'express'
 import connectDatabase from './src/database/db.js'
 import dotenv from "dotenv"
