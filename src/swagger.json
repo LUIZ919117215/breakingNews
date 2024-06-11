@@ -222,7 +222,11 @@
           "summary": "Create a new post",
           "description": "Route responsible for creating a new Post",
           "tags": ["Post"],
-          "security": [{ "bearerAuth": [] }],
+          "security": [{ "bearerAuth": {
+            "type":"http",
+            "scheme":"bearer",
+            "bearerFormat":"JWT"
+          } }],
           "requestBody": {
             "content": {
               "application/json": {
