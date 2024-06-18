@@ -356,7 +356,7 @@
           }
         }
       },
-      "/news/byIdPost/{id}": {
+      "/news/byUser/{id}": {
         "patch": {
           "summary": "Search post by id",
           "description": "Route responsible for fetching post by id",
@@ -392,7 +392,7 @@
           }
         }
       },
-      "/news/byUserId": {
+      "/news/{id}": {
         "get": {
           "summary": "Search news by use id",
           "description": "Route responsible for fetching news by use id",
@@ -420,7 +420,7 @@
           }
         }
       },
-      "/news/upadate/{id}": {
+      "/news/{id}/": {
         "patch": {
           "summary": "Update a post",
           "description": "Route responsible for updating a Post",
@@ -474,7 +474,7 @@
           }
         }
       },
-      "/news/delete/{id}": {
+      "/news/{id}/v": {
         "delete": {
           "summary": "Delete a post",
           "description": "Route responsible for deleting a Post",
@@ -502,7 +502,7 @@
           }
         }
       },
-      "/news/{id}/like": {
+      "/news/like/{id}": {
         "patch": {
           "summary": "Like a post",
           "description": "Route responsible for liking a post",
@@ -530,7 +530,7 @@
           }
         }
       },
-      "/news/{id}/comment": {
+      "/news/comment/{id}": {
         "patch": {
           "summary": "Comment on a post",
           "description": "Route responsible for commenting on a post",
