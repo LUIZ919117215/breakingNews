@@ -9,7 +9,7 @@ const router = Router()
 
 router.post("/create", userController.create)//testada!!
 router.get("/", userController.findAll)//testada!!
-router.get("/:id",validId, validUser, userController.findById)//testada!!
+router.get("/findById/:id",validId, validUser, userController.findById)//testada!!
 router.patch("/:id",validId, validUser, userController.update)//testada!!
 
 export default router
