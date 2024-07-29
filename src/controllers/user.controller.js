@@ -2,6 +2,7 @@
 //tentando//
 //código entendido
 import userService from "../services/user.service.js";
+import jwt from 'jsonwebtoken';
 
 const create = async (req, res) => {
     try{
@@ -17,15 +18,22 @@ const create = async (req, res) => {
             return res.status(400).send({ message: "Error creating User" })
         }
 
+        const generateToken = (id) => jwt.sign({id: id}, process.env.SECRET_JWT, { expiresIn: 86400 })
+
+        const token = generateToken(user._id)
+
         res.status(201).send({
             message: "User created successfully",
-            user: {
-                id: user._id,
-                name,
-                username,
-                email,
-                avatar,
-                background,
+            data: {
+                token,
+               user: {
+                  id: user._id,
+                  name,
+                  username,
+                  email,
+                  avatar,
+                  background,
+              }
             }
         });
 
