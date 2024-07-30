@@ -59,8 +59,9 @@ const findAll = async (req, res) => {
 
 const findById = async (req, res) => {
     try {
-        const id = req.id
-        const user = req.user
+      //   const id = req.userId
+        const user = req.uSer
+
         res.send(user)
     } catch (err) {
         res.status(500).send({ message: err.message })
